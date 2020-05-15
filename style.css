@@ -617,12 +617,12 @@ background: #10c9c3;
 
 /*MEDIA====================*/
 
-@media (max-width: 980px)
+@media (max-width: 414px)
  { 
 
 
  .header {
- 	display: block;
+ 	display: flex;
  	justify-content: center;
  	padding: 20px;
  }
