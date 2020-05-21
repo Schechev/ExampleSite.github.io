@@ -201,8 +201,13 @@
 		third sixth gathered female creeping bearing behold years.
 		</h2>
 	</div>
-	<div class="wpv_video">
-		<video class="video" src="Video/preroll.mp4" controls></video>
+	<div class="wpv_video" onmousemove="myMoveFunction()" onmouseout="mouseOut()" id="wpv_video">
+		<div id="button_move">
+		<button id="button"> > </button>
+		</div>
+		<video class="video" id="video">
+		<source src="Video/preroll.mp4"  type="video/mp4">
+		</video>
 	</div>
 </div>
 
@@ -299,12 +304,24 @@
 <!-- TESTIMONIALS -------------------->
 
 <div class="testimonials-slider" id="testimonials">
-	<div class="slider">
+	<div class="mySlides">
 		<p class="q"> "Outstanding job and exceeded all expectations. It was a pleasure 
 		to work with them on a sizable first project and am looking 
 		forward to start the next one asap."
 		</p>
 		<p class="author"> Michael Hopkins </p>
+	</div> <!-- slider -->
+	<div class="mySlides">
+		<p class="q"> I love you the more in that I believe you had liked me for my own sake and for nothing else
+		</p>
+		<p class="author"> John Keat </p>
+	</div> <!-- slider -->
+	<div class="mySlides">
+		<p class="q"> I have not failed. I've just found 10,000 ways that won't work.
+		</p>
+		<p class="author"> Thomas Edison </p>
+	</div> <!-- slider -->
+		
 
 		<div class="dot-container">
   		<span class="dot" onclick="currentSlide(1)"></span> 
@@ -312,7 +329,7 @@
  		<span class="dot" onclick="currentSlide(3)"></span> 
 		</div>
 
-	</div> <!-- slider -->
+	
 </div><!-- testimonials-slider -->
 
 <!-- CLIENTS ------------------------- -->
@@ -407,5 +424,7 @@
 	</div>
 
 </div> <!-- footer -->
+
+<script src="app.js"></script>
 </body>
 </html>

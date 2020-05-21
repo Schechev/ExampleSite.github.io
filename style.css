@@ -329,7 +329,6 @@ background: #10c9c3;
 }
 .wpv_text {
 	width: 100%;
-
 	margin: 0 auto;
 	text-align: center;
 
@@ -353,10 +352,28 @@ background: #10c9c3;
 .wpv_video {
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 .video {
-	width: 1170px;
+	width: 700px;
 	height: 570px;
+}
+#button {
+display: none;
+justify-content: center;
+position: absolute;
+top: 40%;
+left: 45%;
+width: 80px;
+height: 80px;
+border-radius: 100%;
+border-style: none;
+background-color: #10c9c3;
+font-size: 30px;
+font-weight: 1000;
+color: #fff;
+z-index: 100;
+transition: 0.2s;
 }
 
 /*SERVICES =======================*/
@@ -409,18 +426,19 @@ background: #10c9c3;
 	color: #fff;
 }
 
-.slider {
+.mySlides {
+	display: none;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	margin: 100px 0 40px 0;
+	margin: 50px 0 40px 0;
 	font-family: 'Montserrat', sans-serif;
 	padding: 60px 70px;
 }
 .q {
 	text-align: center;
 	font-size: 24px;
-	margin-top: 180px;
+	margin-top: 10px;
 	padding: 0 270px;
 
 }
@@ -433,7 +451,7 @@ background: #10c9c3;
     text-align: center;
     padding: 20px;
     background: #10c9c3;
-    margin-top: 110px;
+    margin-top: 50px;
 }
 .dot {
   cursor: pointer;
